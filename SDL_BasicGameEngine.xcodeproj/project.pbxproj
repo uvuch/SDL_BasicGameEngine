@@ -11,6 +11,7 @@
 		46597B2E2A5B999900366BE4 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46597B2B2A5B999900366BE4 /* SDL2_image.framework */; };
 		46597B2F2A5B999900366BE4 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46597B2C2A5B999900366BE4 /* SDL2_ttf.framework */; };
 		46597B302A5B999900366BE4 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46597B2D2A5B999900366BE4 /* SDL2.framework */; };
+		46597B332A5B9B0B00366BE4 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46597B312A5B9B0B00366BE4 /* game.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		46597B2B2A5B999900366BE4 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
 		46597B2C2A5B999900366BE4 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
 		46597B2D2A5B999900366BE4 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		46597B312A5B9B0B00366BE4 /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		46597B322A5B9B0B00366BE4 /* game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				46597B232A5B992E00366BE4 /* main.cpp */,
+				46597B312A5B9B0B00366BE4 /* game.cpp */,
+				46597B322A5B9B0B00366BE4 /* game.hpp */,
 			);
 			path = SDL_BasicGameEngine;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46597B242A5B992E00366BE4 /* main.cpp in Sources */,
+				46597B332A5B9B0B00366BE4 /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

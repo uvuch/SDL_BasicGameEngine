@@ -9,11 +9,22 @@
 
 int main(int argc, const char * argv[]) {
     Game *pGame = new Game();
-    if (!pGame->init()) return -1;
+    if (!pGame) {
+        std::cout << "!! Error: Could not create game object\n" << std::endl;
+        return -1;
+    }
+    
+    if (!pGame->init()) {
+        delete pGame;
+        return -1;
+    }
     
     while(pGame->running()) {
-        
+        pGame->handleEvents();
+        pGame->update();
+        pGame->render();
     }
-
+    
+    delete pGame;
     return 0;
 }

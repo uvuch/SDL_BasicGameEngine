@@ -9,6 +9,8 @@
 #define game_h
 
 #include <SDL2/SDL.h>
+#include <vector>
+#include "object.h"
 
 class Game
 {
@@ -24,6 +26,7 @@ public:
     
 private:
     bool m_bQuit;
+    std::vector<Object*> m_objects;
 };
 
 

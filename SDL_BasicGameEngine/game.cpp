@@ -28,13 +28,21 @@ void Game::handleEvents() {
     while(SDL_PollEvent(&event)) {
         if (event.type == SDL_QUIT)
             m_bQuit = true;
+        
+        for(std::vector<Object*>::size_type i = 0; i != m_objects.size(); i++ )
+            if (m_objects[i]->handleEvents(event))
+                break;
     }
 }
 
 void Game::update() {
-    
+    for(std::vector<Object*>::size_type i = 0; i != m_objects.size(); i++ ) {
+            m_objects[i]->update();
+    }
 }
 
 void Game::render() {
-    
+    for(std::vector<Object*>::size_type i = 0; i != m_objects.size(); i++ ) {
+            m_objects[i]->draw();
+    }
 }

@@ -13,6 +13,7 @@
 		46597B302A5B999900366BE4 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46597B2D2A5B999900366BE4 /* SDL2.framework */; };
 		46597B332A5B9B0B00366BE4 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46597B312A5B9B0B00366BE4 /* game.cpp */; };
 		469089B12A8B084C0024C599 /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 469089B02A8B084C0024C599 /* error.cpp */; };
+		469089B42A8B166E0024C599 /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 469089B22A8B166E0024C599 /* object.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		46597B322A5B9B0B00366BE4 /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
 		469089AF2A8B084C0024C599 /* error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
 		469089B02A8B084C0024C599 /* error.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = error.cpp; sourceTree = "<group>"; };
+		469089B22A8B166E0024C599 /* object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = object.cpp; sourceTree = "<group>"; };
+		469089B32A8B166E0024C599 /* object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +81,8 @@
 				46597B322A5B9B0B00366BE4 /* game.h */,
 				469089AF2A8B084C0024C599 /* error.h */,
 				469089B02A8B084C0024C599 /* error.cpp */,
+				469089B22A8B166E0024C599 /* object.cpp */,
+				469089B32A8B166E0024C599 /* object.h */,
 			);
 			path = SDL_BasicGameEngine;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			files = (
 				469089B12A8B084C0024C599 /* error.cpp in Sources */,
 				46597B242A5B992E00366BE4 /* main.cpp in Sources */,
+				469089B42A8B166E0024C599 /* object.cpp in Sources */,
 				46597B332A5B9B0B00366BE4 /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

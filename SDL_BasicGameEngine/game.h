@@ -26,6 +26,10 @@ public:
     
 private:
     bool m_bQuit;
+    
+    SDL_Window* m_pWindow;
+    SDL_Renderer* m_pRenderer;
+    
     std::vector<Object*> m_objects;
 };
 

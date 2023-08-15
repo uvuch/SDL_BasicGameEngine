@@ -1,15 +1,14 @@
 //
-//  game.hpp
+//  game.h
 //  SDL_BasicGameEngine
 //
 //  Created by Serge Muzyka on 7/9/23.
 //
 
-#ifndef game_hpp
-#define game_hpp
+#ifndef game_h
+#define game_h
 
 #include <SDL2/SDL.h>
-#include <iostream>
 
 class Game
 {
@@ -17,7 +16,7 @@ public:
     Game();
     ~Game();
 
-    bool init();
+    int init();
     bool running() { return !m_bQuit; }
     void handleEvents();
     void update();
@@ -28,4 +27,4 @@ private:
 };
 
 
-#endif /* game_hpp */
+#endif /* game_h */

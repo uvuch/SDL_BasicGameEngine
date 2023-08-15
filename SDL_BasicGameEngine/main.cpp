@@ -5,16 +5,15 @@
 //  Created by Serge Muzyka on 7/9/23.
 //
 
-#include "game.hpp"
+#include "error.h"
+#include "game.h"
 
 int main(int argc, const char * argv[]) {
     Game *pGame = new Game();
-    if (!pGame) {
-        std::cout << "!! Error: Could not create game object\n" << std::endl;
-        return -1;
-    }
+    if (!pGame)
+        return errorMessage("Could not create game object");
     
-    if (!pGame->init()) {
+    if (pGame->init() != 0) {
         delete pGame;
         return -1;
     }

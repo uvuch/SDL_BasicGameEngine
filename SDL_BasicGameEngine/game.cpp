@@ -5,7 +5,8 @@
 //  Created by Serge Muzyka on 7/9/23.
 //
 
-#include "game.hpp"
+#include "error.h"
+#include "game.h"
 
 Game::Game() : m_bQuit(true) {};
 
@@ -13,15 +14,13 @@ Game::~Game() {
     SDL_Quit();
 }
 
-bool Game::init() {
-    if (SDL_Init(SDL_INIT_EVERYTHING) != 0) {
-        std::cout << "!! Error: " << SDL_GetError() << std::endl;
-        return false;
-    };
+int Game::init() {
+    if (SDL_Init(SDL_INIT_EVERYTHING) != 0)
+        return errorMessage(SDL_GetError());
     
     m_bQuit = false;
     
-    return true;
+    return 0;
 }
 
 void Game::handleEvents() {

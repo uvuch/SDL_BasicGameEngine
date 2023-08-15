@@ -12,6 +12,7 @@
 		46597B2F2A5B999900366BE4 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46597B2C2A5B999900366BE4 /* SDL2_ttf.framework */; };
 		46597B302A5B999900366BE4 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46597B2D2A5B999900366BE4 /* SDL2.framework */; };
 		46597B332A5B9B0B00366BE4 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46597B312A5B9B0B00366BE4 /* game.cpp */; };
+		469089B12A8B084C0024C599 /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 469089B02A8B084C0024C599 /* error.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,7 +34,9 @@
 		46597B2C2A5B999900366BE4 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
 		46597B2D2A5B999900366BE4 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		46597B312A5B9B0B00366BE4 /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
-		46597B322A5B9B0B00366BE4 /* game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
+		46597B322A5B9B0B00366BE4 /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		469089AF2A8B084C0024C599 /* error.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		469089B02A8B084C0024C599 /* error.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = error.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +75,9 @@
 			children = (
 				46597B232A5B992E00366BE4 /* main.cpp */,
 				46597B312A5B9B0B00366BE4 /* game.cpp */,
-				46597B322A5B9B0B00366BE4 /* game.hpp */,
+				46597B322A5B9B0B00366BE4 /* game.h */,
+				469089AF2A8B084C0024C599 /* error.h */,
+				469089B02A8B084C0024C599 /* error.cpp */,
 			);
 			path = SDL_BasicGameEngine;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				469089B12A8B084C0024C599 /* error.cpp in Sources */,
 				46597B242A5B992E00366BE4 /* main.cpp in Sources */,
 				46597B332A5B9B0B00366BE4 /* game.cpp in Sources */,
 			);

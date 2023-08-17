@@ -12,14 +12,14 @@
 
 class Error {
 public:
-    static Error* instance();
+    static Error* Instance();
     int message(const char *msg);
     
 private:
-    static Error *m_pInstance;
+    static Error *s_pInstance;
     Error() {}
 };
 
-#define errorMessage(msg)   Error::instance()->message(msg);
+#define errorMessage(msg)   Error::Instance()->message(msg);
 
 #endif /* error_h */

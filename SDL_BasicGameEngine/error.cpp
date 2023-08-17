@@ -6,13 +6,13 @@
 
 #include "error.h"
 
-Error* Error::m_pInstance = nullptr;
+Error* Error::s_pInstance = nullptr;
 
-Error* Error::instance() {
-    if (!m_pInstance)
-        m_pInstance = new Error();
+Error* Error::Instance() {
+    if (!s_pInstance)
+        s_pInstance = new Error();
     
-    return m_pInstance;
+    return s_pInstance;
 }
 
 int Error::message(const char *msg) {

@@ -14,6 +14,7 @@
 		46597B332A5B9B0B00366BE4 /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46597B312A5B9B0B00366BE4 /* game.cpp */; };
 		469089B12A8B084C0024C599 /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 469089B02A8B084C0024C599 /* error.cpp */; };
 		469089B42A8B166E0024C599 /* object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 469089B22A8B166E0024C599 /* object.cpp */; };
+		46CF27492A8DAF2100F678D4 /* texture_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46CF27472A8DAF2100F678D4 /* texture_manager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		469089B02A8B084C0024C599 /* error.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = error.cpp; sourceTree = "<group>"; };
 		469089B22A8B166E0024C599 /* object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = object.cpp; sourceTree = "<group>"; };
 		469089B32A8B166E0024C599 /* object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		46CF27472A8DAF2100F678D4 /* texture_manager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = texture_manager.cpp; sourceTree = "<group>"; };
+		46CF27482A8DAF2100F678D4 /* texture_manager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = texture_manager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				469089B02A8B084C0024C599 /* error.cpp */,
 				469089B22A8B166E0024C599 /* object.cpp */,
 				469089B32A8B166E0024C599 /* object.h */,
+				46CF27472A8DAF2100F678D4 /* texture_manager.cpp */,
+				46CF27482A8DAF2100F678D4 /* texture_manager.h */,
 			);
 			path = SDL_BasicGameEngine;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				469089B12A8B084C0024C599 /* error.cpp in Sources */,
 				46597B242A5B992E00366BE4 /* main.cpp in Sources */,
 				469089B42A8B166E0024C599 /* object.cpp in Sources */,
+				46CF27492A8DAF2100F678D4 /* texture_manager.cpp in Sources */,
 				46597B332A5B9B0B00366BE4 /* game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

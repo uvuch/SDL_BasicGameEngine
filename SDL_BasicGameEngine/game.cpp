@@ -36,12 +36,12 @@ int Game::init() {
 void Game::handleEvents() {
     SDL_Event event;
     while(SDL_PollEvent(&event)) {
-        if (event.type == SDL_QUIT)
-            m_bQuit = true;
-        
         for(std::vector<Object*>::size_type i = 0; i != m_objects.size(); i++ )
             if (m_objects[i]->handleEvents(event))
                 break;
+        
+        if (event.type == SDL_QUIT)
+            m_bQuit = true;
     }
 }
 

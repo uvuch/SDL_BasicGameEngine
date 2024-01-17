@@ -8,7 +8,7 @@
 #ifndef game_h
 #define game_h
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 #include <vector>
 #include "object.h"
 

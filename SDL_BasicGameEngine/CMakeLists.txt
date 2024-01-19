@@ -1,12 +1,7 @@
-cmake_minimum_required(VERSION 3.20.0)
-set(CMAKE_CXX_STANDARD 11)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+cmake_minimum_required(VERSION 3.16)
 
-project(SDL_GameEngine)
+add_executable(sdl_game main.cpp error.cpp game.cpp object.cpp)
 
-include_directories("../../SDL/include")
-link_directories("../../SDL/build")
-
-add_executable(SDL_GameEngine main.cpp error.cpp game.cpp object.cpp)
-target_link_libraries(SDL_GameEngine "libSDL2-2.0.dylib")
-
+target_link_libraries(sdl_game PRIVATE SDL2::SDL2)
+# target_link_libraries(sdl_issue PRIVATE SDL2::SDL2-shared)
+# target_link_libraries(sdl_issue PRIVATE SDL2::SDL2-static)
